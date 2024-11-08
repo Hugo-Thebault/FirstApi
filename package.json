@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "post install" : "npx prisma db push && npx prisma generate",
+    "start" : "node index.js",
+    "dev" : "node index.js",
     "test": "vitest"
   },
   "author": "",
